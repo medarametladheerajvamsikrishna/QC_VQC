@@ -1,0 +1,12 @@
+{
+  "num_qubits": 4,
+  "reps": 1,
+  "entanglement": "linear",
+  "optimizer_name": "COBYLA",
+  "max_iter": 40,
+  "shots": 1024,
+  "backend_name": "Local Quantum Simulator (Qiskit Aer SamplerV2)",
+  "encoding_type": "Angle Encoding [Ry(theta)]",
+  "classifier_type": "Variational Quantum Classifier (VQC)",
+  "num_weights": 8
+}

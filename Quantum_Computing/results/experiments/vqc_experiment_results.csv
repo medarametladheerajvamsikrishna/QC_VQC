@@ -1,0 +1,10 @@
+Model / Config,Description,Train Samples,Train Distribution,Qubits,Reps,Optimizer,Max Iter,Train Time (s),Accuracy,Precision,Recall,F1 Score,ROC-AUC,TN,FP,FN,TP
+RF,Random Forest (Classical),4000,Natural (3720/280),N/A,N/A,N/A,N/A,1.32,0.914,0.4365,0.7857,0.5612,0.9498,859,71,15,55
+Exp_A1,"VQC (500 samples, 35% fraud, reps=1, COBYLA 40)",500,325L / 175F (35.0% F),4,1,COBYLA,40,90.76,0.912,0.1786,0.0714,0.102,0.4677,907,23,65,5
+Exp_B1,"VQC (1000 samples, 35% fraud, reps=1, COBYLA 40)",930,650L / 280F (30.1% F),4,1,COBYLA,40,190.6,0.917,0.2174,0.0714,0.1075,0.503,912,18,65,5
+Exp_C1,"VQC (2000 samples, 35% fraud, reps=1, COBYLA 40)",1580,1300L / 280F (17.7% F),4,1,COBYLA,40,307.82,0.93,0.0,0.0,0.0,0.4886,930,0,70,0
+Exp_B2,"VQC (1000 samples, balanced 50% fraud, reps=1, COBYLA 40)",780,500L / 280F (35.9% F),4,1,COBYLA,40,145.65,0.897,0.1333,0.0857,0.1043,0.5144,891,39,64,6
+Exp_B3,"VQC (1000 samples, fraud-focused 70% fraud, reps=1, COBYLA 40)",580,300L / 280F (48.3% F),4,1,COBYLA,40,105.61,0.678,0.0909,0.4,0.1481,0.5554,650,280,42,28
+Exp_E1,"VQC (1000 samples, 35% fraud, reps=2, COBYLA 40)",930,650L / 280F (30.1% F),4,2,COBYLA,40,171.92,0.918,0.2273,0.0714,0.1087,0.6298,913,17,65,5
+Exp_F1,"VQC (1000 samples, 35% fraud, reps=1, COBYLA 80)",930,650L / 280F (30.1% F),4,1,COBYLA,80,374.58,0.917,0.2174,0.0714,0.1075,0.5248,912,18,65,5
+Exp_G1,"VQC (1000 samples, 35% fraud, reps=1, SPSA 40)",930,650L / 280F (30.1% F),4,1,SPSA,40,553.37,0.841,0.0762,0.1143,0.0914,0.5112,833,97,62,8
