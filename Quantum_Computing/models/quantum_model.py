@@ -11,6 +11,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import json
 import numpy as np
+# Use core Qiskit StatevectorSampler — does NOT require qiskit-aer
+# This avoids 30+ minute C++ compilation on Streamlit Cloud
 from qiskit.primitives import StatevectorSampler
 from qiskit_machine_learning.algorithms import VQC
 try:
